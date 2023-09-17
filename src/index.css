@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+Expanded:wght@300&display=swap");
+:root {
+  --main-color: #0aad0a;
+  --light-color: #f0f3f2;
+  --shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px,
+    rgba(145, 158, 171, 0.14) 0px 4px 5px 0px,
+    rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+  --font-family: "Encode Sans Expanded", sans-serif;
+  --rating-color: #ffc908;
+}
+
+body {
+  font-family: var(--font-family) !important;
+  background-image: url(images/light-patten.svg);
+}
+.rating-color {
+  color: var(--rating-color);
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+a,
+a:hover {
+  color: black;
+  text-decoration: none;
+}
+.product:hover {
+  box-shadow: var(--shadow);
+  border: solid 1px var(--main-color);
+}
+.product .btn {
+  transition: transform 1s, opacity 1s;
+  transform: translateY(100%);
+  opacity: 0;
+}
+.product:hover .btn {
+  opacity: 1;
+  transform: translateY(0%);
+}
+.font-sm {
+  font-size: 14px;
+}
+.font-smaller {
+  font-size: 12px;
+}
+.rating svg {
+  width: 20px;
+  height: 20px;
+}
+.text-main {
+  color: var(--main-color);
+}
+.bg-main {
+  background-color: var(--main-color) !important;
+}
+.bg-main-light {
+  background-color: var(--light-color) !important;
+}
+nav i:hover,
+.pro-brands i:hover,
+.home i:hover,
+.footer i:hover {
+  color: var(--main-color);
+}
+nav li:hover,
+nav a:hover,
+.log-out:hover {
+  color: var(--main-color) !important;
+  font-weight: bold;
+}
+.special-color {
+  background-image: linear-gradient(to top left, #5db0d4, #eefee2);
+  opacity: 0.8;
+}
+.color-hover:hover {
+  color: var(--main-color);
+}
+.img-category {
+  width: 20%;
+}
+.img-category img {
+  height: 200px;
+}
+img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.i-wishlist {
+  width: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(216, 241, 230, 0.46) 0.1%,
+    rgba(233, 226, 226, 0.28) 90.1%
+  );
+}
+.bg-radialGradient {
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(216, 241, 230, 0.46) 0.1%,
+    rgba(233, 226, 226, 0.28) 90.1%
+  );
+}
+.hover-clear:hover {
+  color: red !important;
+}
